@@ -1,0 +1,10 @@
+*.c
+*.o
+nimcache
+*.nimproject*
+*.exe
+*.qmlc
+*.idea
+*main
+libDOtherSide.dll
+examples
