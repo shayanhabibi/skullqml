@@ -1,18 +1,17 @@
-import locks
-import macros
-import strutils
-import sequtils
-import tables
-import typetraits
+import std/[
+  locks,
+  macros,
+  strutils,
+  sequtils,
+  tables,
+  typetraits
+]
+
+import skullqml/spec
+
 
 ## SkullQml aims to provide binding to the QML for the NimSkull programming language
 
-template debugMsg(message: string) =
-  echo "SkullQml: ", message
-
-template debugMsg(typeName: string, procName: string) =
-  when defined(debug):
-    debugMsg(typeName & ": " & procName)
 
 include "skullqml/private/nimqmlmacros.nim"
 include "skullqml/private/dotherside.nim"
